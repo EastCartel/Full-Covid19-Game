@@ -244,14 +244,14 @@ input:placeholder {
 
  #home {
      bottom: 100px;
-     position: absolute;
+     /* position: absolute;
      top: 2rem;
-     right: 400px;
+     right: 400px; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-     
+     height: 100vh;
  }
  #love{
      top: 100px;
@@ -284,3 +284,33 @@ input:placeholder {
   .fa-twitter-square {
     color: rgb(8, 8, 8);
   }
+
+  @media screen and (max-width: 420px) {
+      #title {
+          font-size: 30px;
+          margin-bottom: 0;
+      }
+
+      #love {
+          font-size: 25px;
+      }
+  }
+
+  @media screen and (max-width: 375px) {
+    #title {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    #love {
+        font-size: 15px;
+    }
+
+    .high-score {
+        font-size: 20px;
+    }
+
+    #finalScore {
+        font-size: 34px;
+    }
+}

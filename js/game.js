@@ -7,6 +7,7 @@ const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 const choiceContainer = document.querySelector(".choice-container").children;
 
+console.log(choices)
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -107,7 +108,17 @@ choices.forEach(choice => {
         }
         else if(classToApply === 'incorrect'){
             console.log('Wrong answer');
-           alert(`${currentQuestion.answer} is the correct answer`);
+
+            // my change
+            
+            e.target.classList.add('incorrect');
+            console.log(choices)
+            console.log(choices[currentQuestion.answer])
+            document.querySelectorAll(`[data-number]`)[currentQuestion.answer - 1].classList.add('correct')
+            console.log(currentQuestion.answer)
+
+            //
+        //    alert(`${currentQuestion.answer} is the correct answer`);
            currentQuestion.answer.value;
 
            
@@ -120,14 +131,20 @@ choices.forEach(choice => {
         // ans.parentElement.classList.add(classToApply);
 
         setTimeout( () => {
+
+            Array.from(document.querySelectorAll(`[data-number]`)).forEach(opt => {
+                if (opt.classList.contains('correct')) {
+                    opt.classList.remove('correct')
+                }
+            })
              
-        selectedChoice.parentElement.classList.remove(classToApply);
-        getNewQuestion();
-        }, 1000);
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+            if (e.target.classList.contains('incorrect')) {
+                e.target.classList.remove('incorrect')
+            }
 
-        
-
-       
+        }, 2000);
     });
 });
 

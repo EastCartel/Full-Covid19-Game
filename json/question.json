@@ -1,0 +1,50 @@
+[
+    {
+        "question": "What is a coronavirus?",
+        "choice1": "Its a scam pull",
+        "choice2": "Coronaviruses are a large family of viruses that can cause illness in animals and humans",
+        "choice3": "End of the world pandemic",
+        "choice4": "Similar to the malaria virus",
+        "answer": 2
+    },
+    {
+        "question": "Is there a cure to covid-19",
+        "choice1": "Herbs can cure it",
+        "choice2": "Coronaviruses are a large family of viruses that can cause illness in animals and humans",
+        "choice3": "End of the world panaedemic",
+        "choice4": "There is no specific medicine to prevent or treat coronavirus disease (COVID-19). ",
+        "answer": 4
+    },
+    {
+        "question": "how is this coronavirus spread?",
+        "choice1": "Person-to-person spread",
+        "choice2": "Coronaviruses can spread via radio waves",
+        "choice3": "Food",
+        "choice4": "Mosquito bites",
+        "answer": 1
+    },
+    {
+        "question": "what is social distancing?",
+        "choice1": "Stop greeting people",
+        "choice2": "Stop being social",
+        "choice3": "Social distancing refers to a way of creating a barrier of physical distance between two or more people",
+        "choice4": "Distancing from people on social media",
+        "answer": 3
+    },
+    {
+        "question": "how can we help prevent the spread of coronavirus?",
+        "choice1": "Wash your hands often with soap and water for at least 20 seconds",
+        "choice2": "Stop being social",
+        "choice3": "Hug people more frequently",
+        "choice4": "Distancing from people on social media",
+        "answer": 1
+    },
+    {
+        "question": "what do I do if I develop symptoms?",
+        "choice1": "Isolate & seek medical attention",
+        "choice2": "Keep on clubbing",
+        "choice3": "Hug people more frequently",
+        "choice4": "Self medication",
+        "answer": 1
+    }
+]

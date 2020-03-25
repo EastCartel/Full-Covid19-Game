@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    
+    font-family: 'Montserrat', sans-serif;
+   
+    
+
+    background-image:linear-gradient(
+        to right bottom, 
+        #423f3fda,
+        #56a6eb41) 
+         ,url("/img/world.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 80hv;
+
+}
+
+/* Note: rem is used instad of px--*/
+:root {
+    background-color: #ecf5ff ;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #56a5eb;
+    margin-bottom: 5rem;
+}
+
+h1 > span {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+/* UTILITIES */
+.container {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* BUTTONS */
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem rgba(86, 185, 225, 0.5);
+    transform: translateY(translateY(-0.1rem));
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Forms */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem rgba(86, 185, 225, 0.5);
+}
+
+input:placeholder {
+    color: #aaa;
+}
+
+/* Neon */
+.a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.a span {
+    position: absolute;
+    display: block;
+}
+
+.a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, #2196f3);
+}
+
+.a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.a span:nth-child(3) {
+   bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #2196f3);
+}
+
+.a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.a span:nth-child(2) {
+    top: -100%;
+     right: 0;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(180deg,transparent, #2196f3);
+ }
+ 
+ .a:hover span:nth-child(2) {
+     top: 100%;
+     transition: 1s;
+     transition-delay: 0.25s;
+ }
+
+ .a span:nth-child(4) {
+    bottom: -100%;
+     left: 0;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(360deg,transparent, #2196f3);
+ }
+ 
+ .a:hover span:nth-child(4) {
+     bottom: 100%;
+     transition: 1s;
+     transition-delay: 0.75s;
+ }
+ /* end of neon */
+
+ /* footer */
+ .love {
+     font-size: 5rem;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     bottom: 2rem;
+ }
+
+ .fab {
+    font-size: 6rem;
+    color: rgba(15, 15, 15, 0.2);
+    display: flex;
+    justify-content: center;
+ }
+
+ #home {
+     bottom: 100px;
+     position: absolute;
+     top: 2rem;
+     right: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+     
+ }
+ #love{
+     top: 100px;
+ }
+
+
+
+ /* particles */
+ .fab {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-github {
+    color: rgb(8, 8, 8);
+  }
+  
+  /* Twitter */
+  .fa-twitter-square {
+    color: rgb(8, 8, 8);
+  }
